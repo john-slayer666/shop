@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="" />
+    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="start">
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/mapper/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/products.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V2__add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V2__add_admin.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/fragments/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/fragments/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,11 +51,17 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2ZrvNrUHlXPl43IFklGAHmnzcnw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -44,12 +71,16 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/shop&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.johnslayer.shop.domain" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.johnslayer.shop.service" />
     </key>
   </component>
   <component name="RunManager">
@@ -81,6 +112,23 @@
       <option name="presentableId" value="Default" />
       <updated>1703192982679</updated>
     </task>
+    <task id="LOCAL-00001" summary="start">
+      <option name="closed" value="true" />
+      <created>1703514371757</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703514371758</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

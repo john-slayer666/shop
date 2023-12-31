@@ -4,24 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/ProductDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/mapper/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/products.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="add user page to edit profile">
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/BucketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/BucketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/BucketDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/BucketDetailsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V3__add_products.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/bucket.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V2__add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V2__add_admin.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/fragments/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/fragments/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/products.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="HTML File" />
       </list>
@@ -72,7 +73,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Java/shop&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -120,12 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1703514371758</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add user page to edit profile">
+      <option name="closed" value="true" />
+      <created>1703771135176</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703771135176</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="add user page to edit profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="add user page to edit profile" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

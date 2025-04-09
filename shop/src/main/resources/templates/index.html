@@ -6,6 +6,11 @@
 </head>
 <body>
  <div th:insert="~{fragments/menu :: #nav-menu}"></div>
-<h4>Welcome to start page</h4>
+
+ <h3>Clicks: <b th:text="${amountClicks}">10</b></h3>
+
+ <h3>Your UUID: <b th:text="${uuid}">10</b></h3>
+ <!-- url user id-->
+ <h4>Welcome to start page</h4>
 </body>
 </html>

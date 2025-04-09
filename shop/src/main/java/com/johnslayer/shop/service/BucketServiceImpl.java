@@ -11,10 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -83,4 +80,21 @@ public class BucketServiceImpl implements BucketService {
 
         return bucketDTO;
     }
+
+    @Override
+    public void removeFromBucket(User user, Long productId) {
+        // Логика удаления товара из корзины
+        Bucket bucket = user.getBucket();
+        if (bucket != null && bucket.getProducts() != null) {
+            bucket.getProducts().removeIf(product -> product.getId().equals(productId));
+            bucketRepository.save(bucket);
+        }
+    }
+
+    @Override
+    public Optional <User> getUserById (Long id) {
+        return Optional.empty();
+    }
+
+
 }

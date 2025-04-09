@@ -5,26 +5,31 @@
     <title>Bucket</title>
 </head>
 <body>
-    <div th:insert="~{fragments/menu :: #nav-menu}"></div>
-    <h2>Your bucket</h2>
-    <h3>All sum -> <b th:text="${bucket.sum}">1000</b></h3>
-    <table border="1" align="center">
-        <tr>
-            <td>Title</td>
-            <td>Amount</td>
-            <td>Price</td>
-            <td>Sum</td>
-            <td></td>
-        </tr>
-        <tr th:each="detail: ${bucket.bucketDetails}">
-            <td th:text="${detail.title}">Group</td>
-            <td th:text="${detail.amount}">3</td>
-            <td th:text="${detail.price}">11.0</td>
-            <td th:text="${detail.sum}">33</td>
-            <td><a href="#">Remove</a></td>
+<div th:insert="~{fragments/menu :: #nav-menu}"></div>
+<h2>Your bucket</h2>
+<h3>All sum -> <b th:text="${bucket.sum}">1000</b></h3>
+<table border="1" align="center">
+    <tr>
+        <td>Title</td>
+        <td>Amount</td>
+        <td>Price</td>
+        <td>Sum</td>
+        <td></td>
+    </tr>
+    <tr th:each="detail: ${bucket.bucketDetails}">
+        <td th:text="${detail.title}">Group</td>
+        <td th:text="${detail.amount}">3</td>
+        <td th:text="${detail.price}">11.0</td>
+        <td th:text="${detail.sum}">33</td>
+        <td>
+            <!-- Форма для удаления товара из корзины -->
+            <form th:action="@{/removeFromBucket/{productId}(productId=${detail.productId})}" method="post">
+                <input type="hidden" name="_method" value="DELETE" />
+                <button type="submit">Remove</button>
+            </form>
 
-        </tr>
-    </table>
-
+        </td>
+    </tr>
+</table>
 </body>
 </html>

@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="EntryPointsManager">
-    <list size="12">
+    <list size="13">
       <item index="0" class="java.lang.String" itemvalue="lombok.Data" />
       <item index="1" class="java.lang.String" itemvalue="org.mapstruct.InheritInverseConfiguration" />
       <item index="2" class="java.lang.String" itemvalue="org.mapstruct.Mapper" />
       <item index="3" class="java.lang.String" itemvalue="org.springframework.beans.factory.annotation.Autowired" />
       <item index="4" class="java.lang.String" itemvalue="org.springframework.context.annotation.Bean" />
       <item index="5" class="java.lang.String" itemvalue="org.springframework.context.annotation.Configuration" />
-      <item index="6" class="java.lang.String" itemvalue="org.springframework.stereotype.Controller" />
-      <item index="7" class="java.lang.String" itemvalue="org.springframework.stereotype.Service" />
-      <item index="8" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.ControllerAdvice" />
-      <item index="9" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.ExceptionHandler" />
-      <item index="10" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.ModelAttribute" />
-      <item index="11" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.RequestMapping" />
+      <item index="6" class="java.lang.String" itemvalue="org.springframework.stereotype.Component" />
+      <item index="7" class="java.lang.String" itemvalue="org.springframework.stereotype.Controller" />
+      <item index="8" class="java.lang.String" itemvalue="org.springframework.stereotype.Service" />
+      <item index="9" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.ControllerAdvice" />
+      <item index="10" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.ExceptionHandler" />
+      <item index="11" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.ModelAttribute" />
+      <item index="12" class="java.lang.String" itemvalue="org.springframework.web.bind.annotation.RequestMapping" />
     </list>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
@@ -26,5 +27,8 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="corretto-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
   </component>
 </project>

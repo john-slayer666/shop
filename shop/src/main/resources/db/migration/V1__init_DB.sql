@@ -11,7 +11,6 @@ CREATE TABLE users(
     name VARCHAR(255),
     password VARCHAR(255),
     role VARCHAR(255),
-    bucket_id int8,
     primary key (id)
 );
 
@@ -31,9 +30,6 @@ ALTER TABLE IF EXISTS buckets
     ADD CONSTRAINT bucket_fk_user
         FOREIGN KEY (user_id) REFERENCES users;
 
-ALTER TABLE IF EXISTS users
-    ADD CONSTRAINT user_fk_bucket
-        FOREIGN KEY (bucket_id) REFERENCES buckets;
 
 -- Category
 DROP SEQUENCE IF EXISTS category_seq;

@@ -82,19 +82,26 @@ public class BucketServiceImpl implements BucketService {
     }
 
     @Override
-    public void removeFromBucket(User user, Long productId) {
-        // Логика удаления товара из корзины
-        Bucket bucket = user.getBucket();
-        if (bucket != null && bucket.getProducts() != null) {
-            bucket.getProducts().removeIf(product -> product.getId().equals(productId));
-            bucketRepository.save(bucket);
+    public void removeProducts(Bucket bucket, List<Long> longs) {
+        List<Product> products = bucket.getProducts();
+        if (products == null || products.isEmpty()) {
+            return;
         }
-    }
 
-    @Override
-    public Optional <User> getUserById (Long id) {
-        return Optional.empty();
-    }
+        List<Product> updatedProductList = new ArrayList<>(products);
 
+        for (Long idToRemove : longs) {
+            for (Iterator<Product> iterator = updatedProductList.iterator(); iterator.hasNext(); ) {
+                Product product = iterator.next();
+                if (product.getId().equals(idToRemove)) {
+                    iterator.remove(); //? удаляем только первый найденный
+                    break;
+                }
+            }
+        }
+
+        bucket.setProducts(updatedProductList);
+        bucketRepository.save(bucket);
+    }
 
 }

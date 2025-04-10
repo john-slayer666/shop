@@ -5,7 +5,7 @@ import com.johnslayer.shop.domain.User;
 import com.johnslayer.shop.dto.BucketDTO;
 
 import java.util.List;
-import java.util.Optional;
+
 
 public interface BucketService {
     Bucket createBucket(User user , List<Long> productIds);
@@ -13,7 +13,6 @@ public interface BucketService {
 
     BucketDTO getBucketByUser(String name);
 
-    void removeFromBucket(User user, Long productId);
+    void removeProducts (Bucket bucket, List<Long> longs);
 
-    Optional<User> getUserById(Long id);
 }

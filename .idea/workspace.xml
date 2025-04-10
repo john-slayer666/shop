@@ -4,58 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="add BucketController">
-      <change afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/SessionObjectHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DatabaseToolSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DatabaseToolSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="add Remove product">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/BucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/BucketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ErrorControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ErrorControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/BucketRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/BucketRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dao/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Bucket.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Bucket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/OrderDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/OrderDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/BucketDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/BucketDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/BucketDetailsDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/BucketDetailsDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/ProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/mapper/ProductMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V1__init_DB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V1__init_DB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V2__add_admin.sql" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V2__add_admin.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V3__add_products.sql" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/db/migration/V3__add_products.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/bucket.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/bucket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/fragments/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/fragments/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/resources/templates/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/resources/templates/userList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +30,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "john-slayer666"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/john-slayer666/shop.git",
+    "accountId": "3a091ec7-9ae2-4b5c-aa10-30efa2812ba1"
+  }
+}]]></component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -104,19 +72,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ShopApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Java/shop",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ShopApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/shop&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.johnslayer.shop.domain" />
@@ -178,14 +146,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704058359453</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add Remove product">
+      <option name="closed" value="true" />
+      <created>1744192935360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744192935360</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="add user page to edit profile" />
     <MESSAGE value="add BucketController" />
-    <option name="LAST_COMMIT_MESSAGE" value="add BucketController" />
+    <MESSAGE value="add Remove product" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Remove product" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

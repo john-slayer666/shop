@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="add Remove product">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="add Remove products from bucket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/BucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/BucketController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/ProductServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "john-slayer666"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;john-slayer666&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/john-slayer666/shop.git",
-    "accountId": "3a091ec7-9ae2-4b5c-aa10-30efa2812ba1"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/john-slayer666/shop.git&quot;,
+    &quot;accountId&quot;: &quot;3a091ec7-9ae2-4b5c-aa10-30efa2812ba1&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -154,15 +150,35 @@
       <option name="project" value="LOCAL" />
       <updated>1744192935360</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Remove products from bucket">
+      <option name="closed" value="true" />
+      <created>1744269879391</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744269879391</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="add user page to edit profile" />
     <MESSAGE value="add BucketController" />
     <MESSAGE value="add Remove product" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Remove product" />
+    <MESSAGE value="add Remove products from bucket" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Remove products from bucket" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

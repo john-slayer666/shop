@@ -1,10 +1,8 @@
 package com.johnslayer.shop.controllers;
 
-import com.johnslayer.shop.domain.User;
 import com.johnslayer.shop.dto.BucketDTO;
 import com.johnslayer.shop.service.BucketService;
 import com.johnslayer.shop.service.ProductService;
-import com.johnslayer.shop.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,18 +11,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 
 import java.security.Principal;
-import java.util.List;
 
 @Controller
 public class BucketController {
     private final BucketService bucketService;
-    private  final UserService userService;
-    private ProductService productService;
+    private final ProductService productService;
 
 
-    public BucketController(BucketService bucketService, UserService userService, ProductService productService) {
+    public BucketController(BucketService bucketService,  ProductService productService) {
         this.bucketService = bucketService;
-        this.userService = userService;
         this.productService = productService;
     }
 

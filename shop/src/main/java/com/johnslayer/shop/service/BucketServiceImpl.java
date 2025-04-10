@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 @Service
@@ -88,19 +89,25 @@ public class BucketServiceImpl implements BucketService {
             return;
         }
 
-        List<Product> updatedProductList = new ArrayList<>(products);
+        //? Map с подсчётом, сколько раз нужно удалить каждый id
+        Map<Long, AtomicInteger> toRemoveCount = longs.stream()
+                .collect(Collectors.groupingBy(
+                        id -> id,
+                        Collectors.collectingAndThen(
+                                Collectors.counting(),
+                                count -> new AtomicInteger(count.intValue())
+                        )
+                ));
 
-        for (Long idToRemove : longs) {
-            for (Iterator<Product> iterator = updatedProductList.iterator(); iterator.hasNext(); ) {
-                Product product = iterator.next();
-                if (product.getId().equals(idToRemove)) {
-                    iterator.remove(); //? удаляем только первый найденный
-                    break;
-                }
-            }
-        }
+        //? Фильтруем список, оставляя только те элементы, которые не нужно удалять
+        List<Product> result = products.stream()
+                .filter(product -> {
+                    AtomicInteger count = toRemoveCount.get(product.getId());
+                    return count == null || count.getAndDecrement() <= 0;
+                })
+                .collect(Collectors.toList());
 
-        bucket.setProducts(updatedProductList);
+        bucket.setProducts(result);
         bucketRepository.save(bucket);
     }
 

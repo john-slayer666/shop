@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="add Remove products from bucket">
+    <list default="true" id="78e07c30-3fb7-4de6-b2c5-c190bc3ba153" name="Changes" comment="add Remove products from bucket using stream">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/BucketController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/controllers/BucketController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop/src/main/java/com/johnslayer/shop/service/BucketServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744269879391</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add Remove products from bucket using stream">
+      <option name="closed" value="true" />
+      <created>1744272546185</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744272546185</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +185,8 @@
     <MESSAGE value="add BucketController" />
     <MESSAGE value="add Remove product" />
     <MESSAGE value="add Remove products from bucket" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Remove products from bucket" />
+    <MESSAGE value="add Remove products from bucket using stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Remove products from bucket using stream" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

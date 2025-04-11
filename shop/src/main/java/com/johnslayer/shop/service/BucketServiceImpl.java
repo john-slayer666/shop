@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 public class BucketServiceImpl implements BucketService {
@@ -33,8 +33,7 @@ public class BucketServiceImpl implements BucketService {
     public Bucket createBucket(User user, List<Long> productIds) {
         Bucket bucket = new Bucket();
         bucket.setUser(user);
-        List<Product> productList = getCollectRefProductsByIds(productIds);
-        bucket.setProducts(productList);
+        bucket.setProducts(getCollectRefProductsByIds(productIds));
         return bucketRepository.save(bucket);
     }
 
@@ -48,10 +47,19 @@ public class BucketServiceImpl implements BucketService {
 
     @Override
     public void addProducts(Bucket bucket, List<Long> productIds) {
-        List<Product> products = bucket.getProducts();
-        List<Product> newProductList = products == null ? new ArrayList<>() : new ArrayList<>(products);
-        newProductList.addAll(getCollectRefProductsByIds(productIds));
-        bucket.setProducts(newProductList);
+        List<Product> existingProducts = bucket.getProducts();
+
+        //? Получаем текущие продукты как стрим (или пустой стрим, если список null)
+        Stream <Product> currentProductsStream = existingProducts == null ?
+                Stream.empty() : existingProducts.stream();
+
+        //? Объединяем текущие продукты с новыми и сохраняем как новый список
+        List<Product> updatedProducts = Stream.concat(
+                currentProductsStream,
+                getCollectRefProductsByIds(productIds).stream()
+        ).collect(Collectors.toList());
+
+        bucket.setProducts(updatedProducts);
         bucketRepository.save(bucket);
     }
 
@@ -64,19 +72,30 @@ public class BucketServiceImpl implements BucketService {
         }
 
         BucketDTO bucketDTO = new BucketDTO();
-        Map<Long, BucketDetailsDTO> mapByProductId = new HashMap<>();
 
-        List<Product> products = user.getBucket().getProducts();
-        for(Product product : products) {
-            BucketDetailsDTO details = mapByProductId.get(product.getId());
-            if(details == null) {
-                mapByProductId.put(product.getId(), new BucketDetailsDTO(product));
-            } else {
-                details.setAmount(details.getAmount().add(new BigDecimal(1.0)));
-                details.setSum(details.getSum() + Double.valueOf(product.getPrice().toString()));
-            }
-        }
-        bucketDTO.setBucketDetails(new ArrayList<>(mapByProductId.values()));
+        //? Stream и groupingBy для группировки продуктов по id
+        List<BucketDetailsDTO> details = user.getBucket().getProducts().stream()
+                .collect(Collectors.groupingBy(
+                        Product::getId,
+                        Collectors.reducing(
+                                null,
+                                BucketDetailsDTO::new,
+                                (existing, newDetails) -> {
+                                    if (existing == null) {
+                                        return newDetails;
+                                    }
+                                    existing.setAmount(existing.getAmount().add(new BigDecimal(1.0)));
+                                    existing.setSum(existing.getSum() + newDetails.getSum());
+                                    return existing;
+                                }
+                        )
+                ))
+                .values()
+                .stream()
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+
+        bucketDTO.setBucketDetails(details);
         bucketDTO.aggregate();
 
         return bucketDTO;
@@ -90,20 +109,28 @@ public class BucketServiceImpl implements BucketService {
         }
 
         //? Map с подсчётом, сколько раз нужно удалить каждый id
-        Map<Long, AtomicInteger> toRemoveCount = longs.stream()
-                .collect(Collectors.groupingBy(
-                        id -> id,
-                        Collectors.collectingAndThen(
-                                Collectors.counting(),
-                                count -> new AtomicInteger(count.intValue())
-                        )
-                ));
+        Map<Long, Long> toRemoveCount = longs.stream()
+                .collect(Collectors.groupingBy(id -> id, Collectors.counting()));
 
-        //? Фильтруем список, оставляя только те элементы, которые не нужно удалять
+        //? Map для отслеживания уже удаленных продуктов по каждому id
+        Map<Long, Integer> removedCounts = new HashMap<>();
+
+        //? Фильтруем список
         List<Product> result = products.stream()
                 .filter(product -> {
-                    AtomicInteger count = toRemoveCount.get(product.getId());
-                    return count == null || count.getAndDecrement() <= 0;
+                    Long id = product.getId();
+                    Long toRemove = toRemoveCount.get(id);
+                    if (toRemove == null) {
+                        return true; // Продукт не нужно удалять
+                    }
+
+                    int alreadyRemoved = removedCounts.getOrDefault(id, 0);
+                    if (alreadyRemoved < toRemove) {
+                        //? Удаляем
+                        removedCounts.put(id, alreadyRemoved + 1);
+                        return false;
+                    }
+                    return true;
                 })
                 .collect(Collectors.toList());
 
